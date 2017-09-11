@@ -12,6 +12,10 @@ import android.os.Bundle;
 import android.support.v7.app.NotificationCompat;
 import android.view.View;
 
+/**
+ * Notificaciones
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -23,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     public void createNotification(View v){
         Intent intent = new Intent();
         intent.setClass(this,NotificationActivity.class);
-        PendingIntent mPendingIntent = PendingIntent.getActivity(this,001,intent,PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent mPendingIntent = PendingIntent.getActivity(this,1,intent,PendingIntent.FLAG_UPDATE_CURRENT);
         NotificationCompat.Builder mBuilder = (NotificationCompat.Builder) new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.ic_moto)
                 .setContentTitle("mi notificacion")
@@ -32,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 .setAutoCancel(true)
                 .setPriority(Notification.PRIORITY_MAX);
         // Sets an ID for the notification
-        int mNotificationId = 001;
+        int mNotificationId = 1;
         // Gets an instance of the NotificationManager service
         NotificationManager mNotifyMgr = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         // Builds the notification and issues it.
@@ -44,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         //build notification
         Intent intent = new Intent();
         intent.setClass(this,NotificationActivity.class);
-        PendingIntent mPendingIntent = PendingIntent.getActivity(this,001,intent,PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent mPendingIntent = PendingIntent.getActivity(this,1,intent,PendingIntent.FLAG_UPDATE_CURRENT);
         NotificationCompat.Builder builder =
                 (NotificationCompat.Builder) new NotificationCompat.Builder(this)
                         .setSmallIcon(R.drawable.ic_moto)
