@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    //creando notificacion
     public void createNotification(View v){
         //se crea un intent, que sera la mochila de llevar los datos a la sig activity
         Intent intent = new Intent(this, NotificationActivity.class);
