@@ -1,1 +1,3 @@
-# android_udemy_notifications
+# Android Notifications	
+
+# Proyecto donde se muestra como implementar notiicaciones en las aplicaciones
